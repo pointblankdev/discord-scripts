@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "discord-slash-commands-client": "^1.1.1",
+    "dotenv": "^8.2.0"
+  }
+}
