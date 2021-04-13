@@ -11,12 +11,12 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'team',
+  name: 'participant',
   description: 'Select a team',
   options: [
     {
       name: 'list',
-      description: 'The list of teams',
+      description: 'The list of teams to join',
       type: 1,
       required: true,
       choices: [
