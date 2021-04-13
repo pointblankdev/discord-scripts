@@ -11,28 +11,28 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'stream',
-  description: 'Stream a tournament',
+  name: 'round',
+  description: 'Select a round',
   options: [
     {
       name: 'list',
-      description: 'The list of tournaments to stream',
+      description: 'The list of rounds',
       type: 1,
       required: true,
       choices: [
         {
-          name: 'Tournament 1',
-          value: 'stream_tournament1',
+          category: 'Pre-Final',
+          value: 'round_prefinal',
         },
         {
-          name: 'Tournamet 2',
-          value: 'stream_tournament2',
+          category: 'Kick-Off',
+          value: 'round_kickoff',
         },
       ],
     },
     {
       name: 'limit',
-      description: 'Number of tournaments shown',
+      description: 'Number of rounds shown',
       type: 5,
       required: false,
     },
@@ -40,4 +40,4 @@ const command = {
 };
 
 // will create a new command and log its data. If a command with this name already exist will that be overwritten.
-//client.createCommand(command).then(console.log).catch(console.error);
+client.createCommand(command).then(console.log).catch(console.error);
