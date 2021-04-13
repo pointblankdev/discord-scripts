@@ -11,40 +11,28 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'tournament',
-  description: 'Select a tournament',
+  name: 'stream',
+  description: 'Stream a tournament',
   options: [
     {
       name: 'list',
-      description: 'The list of tournaments',
+      description: 'The list of tournaments to stream',
       type: 1,
       required: true,
       choices: [
         {
-          name: 'Warzone',
-          value: 'tournament_warzone',
+          name: 'Tournament 1',
+          value: 'stream_tournament1',
         },
         {
-          name: 'Goated',
-          value: 'tournament_goated',
-        },
-        {
-          name: 'Milk Stevens',
-          value: 'tournament_milkstevens',
-        },
-        {
-          name: 'Survivor Fighters',
-          value: 'tournament_survivorfighters',
-        },
-        {
-          name: 'Fortnite',
-          value: 'tournament_fortnite',
+          name: 'Tournamet 2',
+          value: 'stream_tournament2',
         },
       ],
     },
     {
       name: 'limit',
-      description: 'Number of tournaments are shown',
+      description: 'Number of tournaments available to stream',
       type: 5,
       required: false,
     },
