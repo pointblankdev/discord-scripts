@@ -11,22 +11,22 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'stream',
-  description: 'Stream a tournament',
+  name: 'sponsor',
+  description: 'Sponsor a tournament',
   options: [
     {
       name: 'list',
-      description: 'The list of tournaments to stream',
+      description: 'The list of tournaments to sponsor',
       type: 1,
       required: true,
       choices: [
         {
           name: 'Tournament 1',
-          value: 'stream_tournament1',
+          value: 'sponsor_tournament1',
         },
         {
-          name: 'Tournamet 2',
-          value: 'stream_tournament2',
+          name: 'Tournament 2',
+          value: 'sponsor_tournament2',
         },
       ],
     },
