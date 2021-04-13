@@ -51,5 +51,20 @@ const command = {
   ],
 };
 
-// will create a new command and log its data. If a command with this name already exist will that be overwritten.
-client.createCommand(command).then(console.log).catch(console.error);
+// // will create a new command and log its data. If a command with this name already exist will that be overwritten.
+// client.createCommand(command).then(console.log).catch(console.error);
+
+// will edit the details of a command.
+client
+  .editCommand(
+    command,
+    "831601233621942354"
+  )
+  .then(console.log)
+  .catch(console.error);
+
+// // will delete a command
+// client
+//   .deleteCommand("id of the command you wish to delete")
+//   .then(console.log)
+//   .catch(console.error);
