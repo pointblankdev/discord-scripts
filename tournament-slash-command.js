@@ -1,5 +1,6 @@
-// https://www.npmjs.com/package/discord-slash-commands-client
-const interactions = require("discord-slash-commands-client");
+/// https://www.npmjs.com/package/discord-slash-commands-client
+const interactions = require('discord-slash-commands-client');
+require('dotenv').config();
 
 const client = new interactions.Client(
   process.env.TOKEN,
@@ -10,32 +11,40 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: "blep",
-  description: "Send a random adorable animal photo",
+  name: 'tournament',
+  description: 'select a tournament',
   options: [
     {
-      name: "animal",
-      description: "The type of animal",
-      type: 3,
+      name: 'list',
+      description: 'The list of tournaments',
+      type: 1,
       required: true,
       choices: [
         {
-          name: "Dog",
-          value: "animal_dog",
+          name: 'Warzone',
+          value: 'tournament_warzone',
         },
         {
-          name: "Cat",
-          value: "animal_cat",
+          name: 'Goated',
+          value: 'tournament_goated',
         },
         {
-          name: "Penguin",
-          value: "animal_penguin",
+          name: 'Milk Stevens',
+          value: 'tournament_milkstevens',
+        },
+        {
+          name: 'Survivor Fighters',
+          value: 'tournament_survivorfighters',
+        },
+        {
+          name: 'Fortnite',
+          value: 'tournament_fortnite',
         },
       ],
     },
     {
-      name: "only_smol",
-      description: "Whether to show only baby animals",
+      name: 'limit',
+      description: 'How many tournaments are shown',
       type: 5,
       required: false,
     },
@@ -44,18 +53,3 @@ const command = {
 
 // will create a new command and log its data. If a command with this name already exist will that be overwritten.
 client.createCommand(command).then(console.log).catch(console.error);
-
-// // will edit the details of a command.
-// client
-//   .editCommand(
-//     { name: "new command name", description: "new command description" },
-//     "id of the command you wish to edit"
-//   )
-//   .then(console.log)
-//   .catch(console.error);
-
-// // will delete a command
-// client
-//   .deleteCommand("id of the command you wish to delete")
-//   .then(console.log)
-//   .catch(console.error);
