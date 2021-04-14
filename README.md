@@ -1,11 +1,11 @@
 ### Overview
 
-**Gather <> Discord Integration**
-commands allow users to interact with Gather on Discord via Slash Commands by simply typing '/'. The repo contains scripts for creating new commands, editing existing commands and deleting commands.
-The src directory contains the 'create', 'delete' and 'edit' folders.
-Each Gather slash command has a file for editing it, another for deleting it or the one it was created wiht, in the corresponding folder. <br>
+**Gather Discord Integration**
+Slash Commands allow users to interact with Gather on Discord by simply typing '/'. This repo contains scripts for creating new commands, editing existing commands and deleting commands.
+The src directory contains 'create', 'delete' and 'edit' folders.
+Each Gather slash command has a javascript file for editing it and another for deleting in the respective 'edit' and 'delete' folders. The script js for creating it lives in the 'create' folder. <br>
 
-### For More Info
+### More Info
 
 Discord Developer Docs <br>
 https://discord.com/developers/docs/interactions/slash-commands
