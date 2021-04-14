@@ -11,22 +11,22 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'match',
-  description: 'Select a tournament match',
+  name: 'stream',
+  description: 'Stream a tournament',
   options: [
     {
       name: 'list',
-      description: 'The list of tournaments',
-      type: 1,
+      description: 'The list of tournaments to stream',
+      type: 3,
       required: true,
       choices: [
         {
-          name: 'Warzone',
-          value: 'tournament_warzone',
+          name: 'Tournament A',
+          value: 'stream_tournamentA',
         },
         {
-          name: 'Goated',
-          value: 'tournament_goated',
+          name: 'Tournamet B',
+          value: 'stream_tournamentB',
         },
       ],
     },
@@ -39,5 +39,8 @@ const command = {
   ],
 };
 
-// will create a new command and log its data. If a command with this name already exist will that be overwritten.
-client.createCommand(command).then(console.log).catch(console.error);
+//will edit the details of a command.
+client
+  .editCommand(command, '831699191486611487')
+  .then(console.log)
+  .catch(console.error);

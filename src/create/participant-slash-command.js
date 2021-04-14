@@ -11,28 +11,28 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'round',
-  description: 'Select a round',
+  name: 'participant',
+  description: 'Select a team',
   options: [
     {
       name: 'list',
-      description: 'The list of rounds',
-      type: 1,
+      description: 'The list of teams to join',
+      type: 3,
       required: true,
       choices: [
         {
-          category: 'Pre-Final',
-          value: 'round_prefinal',
+          name: 'Heats',
+          value: 'team_heats',
         },
         {
-          category: 'Kick-Off',
-          value: 'round_kickoff',
+          name: 'Free for All',
+          value: 'team_freeforall',
         },
       ],
     },
     {
       name: 'limit',
-      description: 'Number of rounds shown',
+      description: 'Number of teams shown',
       type: 5,
       required: false,
     },

@@ -11,36 +11,28 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'head to head',
-  description: 'Play someone head to head',
+  name: 'join',
+  description: 'Send a join request',
   options: [
     {
       name: 'list',
-      description: 'The list of users to play head to head',
-      type: 1,
+      description: 'The list of teams to join',
+      type: 3,
       required: true,
       choices: [
         {
-          name: 'User 1',
-          value: 'pair_user1',
-          tournament: {
-            name: 'Milk Stevens',
-            value: 'tournament_milkstevens',
-          },
+          name: 'Heats',
+          value: 'team_heats',
         },
         {
-          name: 'User 2',
-          value: 'pair_user2',
-          tournament: {
-            name: 'Survivor Fighters',
-            value: 'tournament_survivorfighters',
-          },
+          name: 'Free for All',
+          value: 'team_freeforall',
         },
       ],
     },
     {
       name: 'limit',
-      description: 'Number of users shown',
+      description: 'Number of teams shown',
       type: 5,
       required: false,
     },

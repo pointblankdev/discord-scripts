@@ -11,33 +11,40 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'sponsor',
-  description: 'Sponsor a tournament',
+  name: 'join',
+  description: 'Send a join request',
   options: [
     {
       name: 'list',
-      description: 'The list of tournaments to sponsor',
-      type: 1,
+      description: 'The list of teams to join',
+      type: 3,
       required: true,
       choices: [
         {
-          name: 'Tournament 1',
-          value: 'sponsor_tournament1',
+          name: 'Heats',
+          value: 'team_heats',
         },
         {
-          name: 'Tournament 2',
-          value: 'sponsor_tournament2',
+          name: 'Free for All',
+          value: 'team_freeforall',
+        },
+        {
+          name: 'Meta Frisbee',
+          value: 'team_metafrisbee',
         },
       ],
     },
     {
       name: 'limit',
-      description: 'Number of tournaments shown',
+      description: 'Number of teams shown',
       type: 5,
       required: false,
     },
   ],
 };
 
-// will create a new command and log its data. If a command with this name already exist will that be overwritten.
-client.createCommand(command).then(console.log).catch(console.error);
+//will edit the details of a command.
+client
+  .editCommand(command, '831702952371552296')
+  .then(console.log)
+  .catch(console.error);

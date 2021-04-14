@@ -17,7 +17,7 @@ const command = {
     {
       name: 'list',
       description: 'The list of tournaments to stream',
-      type: 1,
+      type: 3,
       required: true,
       choices: [
         {

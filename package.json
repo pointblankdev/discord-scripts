@@ -20,5 +20,6 @@
     "url": "https://github.com/pointblankdev/discord-scripts/issues"
   },
   "homepage": "https://github.com/pointblankdev/discord-scripts#readme",
+  "devDependencies": {},
   "description": ""
 }

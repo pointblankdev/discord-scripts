@@ -11,28 +11,28 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'join request',
-  description: 'Send a join request',
+  name: 'match',
+  description: 'Select a tournament match',
   options: [
     {
       name: 'list',
-      description: 'The list of teams to join',
-      type: 1,
+      description: 'The list of tournaments',
+      type: 3,
       required: true,
       choices: [
         {
-          name: 'Heats',
-          value: 'team_heats',
+          name: 'Warzone',
+          value: 'tournament_warzone',
         },
         {
-          name: 'Free for All',
-          value: 'team_freeforall',
+          name: 'Goated',
+          value: 'tournament_goated',
         },
       ],
     },
     {
       name: 'limit',
-      description: 'Number of teams shown',
+      description: 'Number of tournaments shown',
       type: 5,
       required: false,
     },
