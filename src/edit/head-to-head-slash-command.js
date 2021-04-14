@@ -11,7 +11,7 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'head-to-head',
+  name: 'head-to-heads',
   description: 'Play someone head to head',
   options: [
     {

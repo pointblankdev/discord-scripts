@@ -11,7 +11,7 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'participant',
+  name: 'participants',
   description: 'Select a team',
   options: [
     {
