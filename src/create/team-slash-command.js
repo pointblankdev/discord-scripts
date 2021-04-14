@@ -43,6 +43,7 @@ const command = {
 
 client.createCommand(command).then(console.log).catch(console.error);
 
+// to check for errors
 // client
 //   .createCommand(command)
 //   .then(console.log)
