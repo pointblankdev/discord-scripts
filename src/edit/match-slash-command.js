@@ -39,5 +39,8 @@ const command = {
   ],
 };
 
-// will create a new command and log its data. If a command with this name already exist will that be overwritten.
-client.createCommand(command).then(console.log).catch(console.error);
+//will edit the details of a command.
+client
+  .editCommand(command, '831699998273044480')
+  .then(console.log)
+  .catch(console.error);
