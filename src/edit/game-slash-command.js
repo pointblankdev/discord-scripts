@@ -49,6 +49,6 @@ const command = {
 
 //will edit the details of a command.
 client
-  .editCommand(command, '831704840840937563')
+  .editCommand(command, '831914999047782410')
   .then(console.log)
   .catch(console.error);

@@ -49,6 +49,6 @@ const command = {
 
 //will delete command
 client
-  .deleteCommand('831704840840937563')
+  .deleteCommand('831914999047782410')
   .then(console.log)
   .catch(console.error);
