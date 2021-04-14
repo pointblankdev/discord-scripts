@@ -7,11 +7,11 @@ Each Gather slash command has a file for editing it, another for deleting it or 
 
 ### For More Info
 
-Discord Developer Docs
+Discord Developer Docs <br>
 https://discord.com/developers/docs/interactions/slash-commands
 
-NPM Install discord-slash-commands-client  
-![](https://www.npmjs.com/package/discord-slash-commands-client)
+NPM Install discord-slash-commands-client <br>
+https://www.npmjs.com/package/discord-slash-commands-client
 
-Slash Commands GraphQL Endpoints
-![](https://txruyrz7z9.execute-api.us-east-1.amazonaws.com/dev/graphql)
+Slash Commands GraphQL Endpoints <br>
+https://txruyrz7z9.execute-api.us-east-1.amazonaws.com/dev/graphql
