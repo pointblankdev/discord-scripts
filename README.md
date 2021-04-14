@@ -5,7 +5,7 @@ Slash Commands allow users to interact with Gather on Discord by simply typing '
 The src directory contains 'create', 'delete' and 'edit' folders.
 Each Gather Slash Command has a javascript file for editing it and another for deleting in the respective 'edit' and 'delete' folders. The script file for creating it lives in the 'create' folder. <br>
 
-## More Info
+#### More Info
 
 Discord Developer Docs <br>
 https://discord.com/developers/docs/interactions/slash-commands
