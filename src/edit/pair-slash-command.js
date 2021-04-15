@@ -15,25 +15,9 @@ const command = {
   description: 'Select a pair',
   options: [
     {
-      name: 'list',
-      description: 'The list of users',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'User 1',
-          value: 'pair_user1',
-        },
-        {
-          name: 'User 2',
-          value: 'pair_user2',
-        },
-      ],
-    },
-    {
       name: 'limit',
-      description: 'Number of users shown',
-      type: 5,
+      description: 'Number of pairs shown',
+      type: 4,
       required: false,
     },
   ],

@@ -15,25 +15,9 @@ const command = {
   description: 'Select a round',
   options: [
     {
-      name: 'list',
-      description: 'The list of rounds',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'Pre-Final',
-          value: 'round_prefinal',
-        },
-        {
-          name: 'Kick-Off',
-          value: 'round_kickoff',
-        },
-      ],
-    },
-    {
       name: 'limit',
       description: 'Number of rounds shown',
-      type: 5,
+      type: 4,
       required: false,
     },
   ],

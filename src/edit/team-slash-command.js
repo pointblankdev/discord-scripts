@@ -15,29 +15,9 @@ const command = {
   description: 'Select a team',
   options: [
     {
-      name: 'list',
-      description: 'The list of teams',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'Heats',
-          value: 'team_heats',
-        },
-        {
-          name: 'Free for All',
-          value: 'team_freeforall',
-        },
-        {
-          name: 'Chess Ladies',
-          value: 'team_chessladies',
-        },
-      ],
-    },
-    {
       name: 'limit',
       description: 'Number of teams shown',
-      type: 5,
+      type: 4,
       required: false,
     },
   ],

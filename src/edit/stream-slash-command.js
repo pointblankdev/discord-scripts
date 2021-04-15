@@ -12,28 +12,12 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'streams',
-  description: 'Stream a tournament',
+  description: 'Select a stream',
   options: [
     {
-      name: 'list',
-      description: 'The list of tournaments to stream',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'Tournament A',
-          value: 'stream_tournamentA',
-        },
-        {
-          name: 'Tournamet B',
-          value: 'stream_tournamentB',
-        },
-      ],
-    },
-    {
       name: 'limit',
-      description: 'Number of tournaments shown',
-      type: 5,
+      description: 'Number of streams shown',
+      type: 4,
       required: false,
     },
   ],

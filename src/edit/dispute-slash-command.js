@@ -12,32 +12,12 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'disputes',
-  description: 'Dispute a match',
+  description: 'Select a match dispute',
   options: [
     {
-      name: 'list',
-      description: 'The list of matches',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'Warzone',
-          value: 'tournament_warzone',
-        },
-        {
-          name: 'Goated',
-          value: 'tournament_goated',
-        },
-        {
-          name: 'Chess',
-          value: 'tournament_chess',
-        },
-      ],
-    },
-    {
       name: 'limit',
-      description: 'Number of matches shown',
-      type: 5,
+      description: 'Number of disputes shown',
+      type: 4,
       required: false,
     },
   ],

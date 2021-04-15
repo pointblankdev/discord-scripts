@@ -12,28 +12,12 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'sponsors',
-  description: 'Sponsor a tournament',
+  description: 'Select a sponsor',
   options: [
     {
-      name: 'list',
-      description: 'The list of tournaments to sponsor',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'Tournament A',
-          value: 'sponsor_tournamentA',
-        },
-        {
-          name: 'Tournament B',
-          value: 'sponsor_tournamentB',
-        },
-      ],
-    },
-    {
       name: 'limit',
-      description: 'Number of tournaments shown',
-      type: 5,
+      description: 'Number of sponsors shown',
+      type: 4,
       required: false,
     },
   ],

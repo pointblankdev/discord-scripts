@@ -12,28 +12,12 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'matches',
-  description: 'Select a tournament match',
+  description: 'Select a match',
   options: [
     {
-      name: 'list',
-      description: 'The list of tournaments',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'Warzone',
-          value: 'tournament_warzone',
-        },
-        {
-          name: 'Goated',
-          value: 'tournament_goated',
-        },
-      ],
-    },
-    {
       name: 'limit',
-      description: 'Number of tournaments shown',
-      type: 5,
+      description: 'Number of matches shown',
+      type: 4,
       required: false,
     },
   ],

@@ -12,32 +12,12 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'participants',
-  description: 'Select a team',
+  description: 'Select a participant',
   options: [
     {
-      name: 'list',
-      description: 'The list of teams to join',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'Heats',
-          value: 'team_heats',
-        },
-        {
-          name: 'Free for All',
-          value: 'team_freeforall',
-        },
-        {
-          name: 'Chess Ladies',
-          value: 'team_chessladies',
-        },
-      ],
-    },
-    {
       name: 'limit',
-      description: 'Number of teams shown',
-      type: 5,
+      description: 'Number of participants shown',
+      type: 4,
       required: false,
     },
   ],

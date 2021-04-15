@@ -11,37 +11,13 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'report-games',
-  description: 'Report game scores',
+  name: 'reported-games',
+  description: 'Select a reported game',
   options: [
     {
-      name: 'list',
-      description: 'The list of games',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'Fortnite',
-          value: 'game_fortnite',
-        },
-        {
-          name: 'Apex Legends',
-          value: 'game_apexlegends',
-        },
-        {
-          name: 'Counter Strike',
-          value: 'game_counterstrike',
-        },
-        {
-          name: 'Hot Sauce Chess',
-          value: 'game_hotsaucechess',
-        },
-      ],
-    },
-    {
       name: 'limit',
-      description: 'Number of games shown',
-      type: 5,
+      description: 'Number of reported games shown',
+      type: 4,
       required: false,
     },
   ],
