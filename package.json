@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "discord-slash-commands-client": "^1.1.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^10.0.0"
   },
   "name": "discord-scripts",
   "version": "1.0.0",
@@ -20,6 +20,8 @@
     "url": "https://github.com/pointblankdev/discord-scripts/issues"
   },
   "homepage": "https://github.com/pointblankdev/discord-scripts#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.3"
+  },
   "description": ""
 }
