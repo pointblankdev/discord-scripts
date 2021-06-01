@@ -14,4 +14,4 @@ NPM Install discord-slash-commands-client <br>
 https://www.npmjs.com/package/discord-slash-commands-client
 
 Slash Commands GraphQL Endpoints <br>
-https://txruyrz7z9.execute-api.us-east-1.amazonaws.com/dev/graphql
+https://s4owy7qsp4.execute-api.af-south-1.amazonaws.com/dev/graphql
