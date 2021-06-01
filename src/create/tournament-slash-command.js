@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'tournament',
-  description: 'Select a tournament (edited)',
+  description: 'Select a tournament',
   options: [
     {
       name: 'list',
