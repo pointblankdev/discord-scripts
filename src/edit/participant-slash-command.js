@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'participants',
-  description: 'Select a participant',
+  description: 'Get a list of participants',
   options: [
     {
       name: 'limit',

@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'rounds',
-  description: 'Select a round',
+  description: 'Get a list of rounds',
   options: [
     {
       name: 'limit',

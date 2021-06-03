@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'streams',
-  description: 'Select a stream',
+  description: 'Get a list of streams',
   options: [
     {
       name: 'limit',

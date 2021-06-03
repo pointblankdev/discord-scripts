@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'pairs',
-  description: 'Select a pair',
+  description: 'List pairs',
   options: [
     {
       name: 'limit',
