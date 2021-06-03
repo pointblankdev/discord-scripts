@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'games',
-  description: 'Select a game',
+  description: 'Get a list of Gather games',
   options: [
     {
       name: 'limit',

@@ -11,29 +11,13 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'join',
-  description: 'Send a join request',
+  name: 'joinRequests',
+  description: 'List join requests',
   options: [
-    {
-      name: 'list',
-      description: 'The list of teams to join',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'Heats',
-          value: 'team_heats',
-        },
-        {
-          name: 'Free for All',
-          value: 'team_freeforall',
-        },
-      ],
-    },
     {
       name: 'limit',
       description: 'Number of teams shown',
-      type: 5,
+      type: 4,
       required: false,
     },
   ],

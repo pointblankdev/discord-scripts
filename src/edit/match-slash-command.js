@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'matches',
-  description: 'Select a match',
+  description: 'Get a list of Gather matches',
   options: [
     {
       name: 'limit',

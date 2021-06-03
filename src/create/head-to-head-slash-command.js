@@ -11,37 +11,13 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'head-to-head',
-  description: 'Play someone head to head',
+  name: 'headtoHeads',
+  description: 'Get a list of head to heads',
   options: [
-    {
-      name: 'list',
-      description: 'The list of users to play head to head',
-      type: 3,
-      required: true,
-      choices: [
-        {
-          name: 'User 1',
-          value: 'pair_user1',
-          tournament: {
-            name: 'Milk Stevens',
-            value: 'tournament_milkstevens',
-          },
-        },
-        {
-          name: 'User 2',
-          value: 'pair_user2',
-          tournament: {
-            name: 'Survivor Fighters',
-            value: 'tournament_survivorfighters',
-          },
-        },
-      ],
-    },
     {
       name: 'limit',
       description: 'Number of users shown',
-      type: 5,
+      type: 4,
       required: false,
     },
   ],

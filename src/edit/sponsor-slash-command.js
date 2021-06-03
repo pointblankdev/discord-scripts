@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'sponsors',
-  description: 'Select a sponsor',
+  description: 'Get a list of sponsors',
   options: [
     {
       name: 'limit',

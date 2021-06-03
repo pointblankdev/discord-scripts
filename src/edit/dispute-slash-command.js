@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'disputes',
-  description: 'Select a match dispute',
+  description: 'List disputes',
   options: [
     {
       name: 'limit',

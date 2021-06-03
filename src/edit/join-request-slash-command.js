@@ -11,8 +11,8 @@ const client = new interactions.Client(
 client.getCommands().then(console.log).catch(console.error);
 
 const command = {
-  name: 'join-requests',
-  description: 'Select a join request',
+  name: 'joinRequests',
+  description: 'List join requests',
   options: [
     {
       name: 'limit',

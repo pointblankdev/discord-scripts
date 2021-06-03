@@ -12,7 +12,7 @@ const client = new interactions.Client(
 
 const command = {
   name: 'teams',
-  description: 'Select a team',
+  description: 'Get a list of teams',
   options: [
     {
       name: 'limit',

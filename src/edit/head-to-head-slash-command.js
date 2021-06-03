@@ -12,7 +12,7 @@ client.getCommands().then(console.log).catch(console.error);
 
 const command = {
   name: 'head-to-heads',
-  description: 'Select a head to head',
+  description: 'Get a list of head to heads',
   options: [
     {
       name: 'limit',
